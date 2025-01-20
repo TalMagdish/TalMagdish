@@ -29,7 +29,7 @@ export function Scene() {
     return temp;
   }, []);
 
-  useFrame((state, delta) => {
+  useFrame((state, _) => {
     // Gentle scene movement
     if (sceneRef.current) {
       sceneRef.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.2) * 0.1;

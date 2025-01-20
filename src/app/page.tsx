@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { NavBar } from "@/components/nav-bar"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, Linkedin, Mail, MapPin } from "lucide-react"
@@ -101,7 +100,7 @@ export default function Home() {
                     const buttonText = e.currentTarget.querySelector('.button-text');
                     if (buttonText) {
                       const texts = [
-                        "Don't Leave!",
+                        `Don't Leave!`,
                         "Where Are You Going!?",
                         "Please Stay!",
                         "Just Click Me!",
