@@ -99,7 +99,7 @@ export default function Home() {
                     const buttonText = e.currentTarget.querySelector('.button-text');
                     if (buttonText) {
                       const texts = [
-                        "Dont Leave",
+                        "Don't Leave",
                         "Where Are You Going",
                         "Stay.",
                         "Just Click Me",
@@ -377,7 +377,7 @@ export default function Home() {
                 <CardDescription>B.S. in Computer Science and Mathematics • Anticipated May 2024</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">GPA: 3.92 (Dean's List) | SAT: 1560</p>
+                <p className="mb-4">GPA: 3.92 (Dean&apos;s List) | SAT: 1560</p>
                 <p className="font-semibold mb-2">Campus Employment:</p>
                 <ul className="list-disc list-inside mb-4">
                   <li>Calculus and Linear Algebra Peer Tutor</li>
