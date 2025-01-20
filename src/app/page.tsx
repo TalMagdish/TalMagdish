@@ -13,8 +13,7 @@ import {
   Globe, 
   LineChart, 
   Rocket, 
-  Server, 
-  Smartphone,
+  Server,
   Cpu,
   Cloud,
   Bot,
@@ -100,10 +99,10 @@ export default function Home() {
                     const buttonText = e.currentTarget.querySelector('.button-text');
                     if (buttonText) {
                       const texts = [
-                        `Don't Leave!`,
-                        "Where Are You Going!?",
-                        "Please Stay!",
-                        "Just Click Me!",
+                        "Dont Leave",
+                        "Where Are You Going",
+                        "Stay.",
+                        "Just Click Me",
                         "🥺🥺🥺🥺🥺"
                       ];
                       
