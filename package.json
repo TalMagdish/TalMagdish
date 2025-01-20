@@ -15,6 +15,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@react-three/drei": "^9.99.0",
     "@react-three/fiber": "^9.0.0-alpha.3",
+    "@types/three": "^0.161.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.1",
@@ -27,11 +28,11 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.161.0",
     "zod": "^3.24.1",
-    "zustand": "^5.0.3",
-    "@types/three": "^0.161.2"
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@netlify/plugin-nextjs": "^5.9.3",
     "@types/bun": "^1.1.17",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
