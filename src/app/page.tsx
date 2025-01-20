@@ -55,19 +55,19 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             onMouseLeave={() => {
-              const button = document.querySelector('.follow-button');
+              const button = document.querySelector('.follow-button') as HTMLElement;
               if (button) {
                 button.style.left = '50%';
                 button.style.top = '50%';
                 // Reset the button text and clear interval when mouse leaves
                 const buttonText = button.querySelector('.button-text');
                 if (buttonText) {
-                  buttonText.textContent = 'Click Me!';
+                  (buttonText as HTMLElement).textContent = 'Click Me!';
                   // Clear the interval
-                  if (buttonText.dataset.intervalId) {
-                    clearInterval(Number(buttonText.dataset.intervalId));
-                    delete buttonText.dataset.intervalId;
-                    delete buttonText.dataset.intervalSet;
+                  if ((buttonText as HTMLElement).dataset.intervalId) {
+                    clearInterval(Number((buttonText as HTMLElement).dataset.intervalId));
+                    delete (buttonText as HTMLElement).dataset.intervalId;
+                    delete (buttonText as HTMLElement).dataset.intervalSet;
                   }
                 }
               }
@@ -96,7 +96,7 @@ export default function Home() {
                     e.currentTarget.parentElement?.style.setProperty('top', `${y}px`);
                     
                     // Change text after following for a while
-                    const buttonText = e.currentTarget.querySelector('.button-text');
+                    const buttonText = e.currentTarget.querySelector('.button-text') as HTMLElement;
                     if (buttonText) {
                       const texts = [
                         "Don't Leave",

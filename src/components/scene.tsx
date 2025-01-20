@@ -14,7 +14,7 @@ import * as THREE from 'three';
 
 export function Scene() {
   const sceneRef = useRef<THREE.Group>(null);
-  const monitorRef = useRef<THREE.Mesh>(null);
+  const monitorRef = useRef<THREE.Mesh<THREE.BufferGeometry, THREE.MeshStandardMaterial>>(null);
   const characterRef = useRef<THREE.Group>(null);
   
   // Create particles for ambient effect
@@ -36,7 +36,7 @@ export function Scene() {
     }
     
     // Screen glow effect
-    if (monitorRef.current) {
+    if (monitorRef.current && monitorRef.current.material) {
       monitorRef.current.material.emissiveIntensity = 
         1 + Math.sin(state.clock.elapsedTime * 2) * 0.2;
     }
